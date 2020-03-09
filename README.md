@@ -1,5 +1,6 @@
 # Onii Hub
 Onii Hub is a program that features Onii applications, that uses a modified Electron Quick Start fork.
+This repository will not be maintained, but support for this repo will continue.
 # Usage
 ```bash
 git clone https://github.com/vix-onii/onii-hub
@@ -7,7 +8,7 @@ cd 'Onii Hub'
 npm start
 ```
 
-
+~~
 ## Information of Electron Quick Start Repo-
 
 **Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
