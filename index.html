@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    -->
+    <title>Onii Hub</title>
+  </head>
+  <body style="background: #111; color: #fff;">
+<div id="app" style="margin: 0 auto; text-align: center; width: 50%;">
+
+    <h1>Onii Hub</h1>
+<img src="https://i.kym-cdn.com/photos/images/original/001/221/161/c8e.gif" height="225" width="350">
+<br>
+
+
+<h2>Statistics</h2>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+
+    <span id="onii"></span>
+
+
+    <p><a href="#">Source Code</a></p>
+
+</div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
