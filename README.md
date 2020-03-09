@@ -1,5 +1,5 @@
 # Onii Hub
-Using Electron Quick Start
+Onii Hub is a program that features Onii applications, that uses a modified Electron Quick Start fork.
 # Usage
 ```bash
 git clone https://github.com/vix-onii/onii-hub
