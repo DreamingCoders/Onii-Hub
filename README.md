@@ -1,6 +1,5 @@
 # Onii Hub
 Using Electron Quick Start
-
 ## Usage
 git clone https://github.com/vix-onii/onii-hub
 
