@@ -1,9 +1,9 @@
 # Onii Hub
 Using Electron Quick Start
-## Usage
+# Usage
 git clone https://github.com/vix-onii/onii-hub
 
-Information of Electron Quick Start Repo-
+## Information of Electron Quick Start Repo-
 
 
 
