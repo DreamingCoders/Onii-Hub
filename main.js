@@ -43,11 +43,12 @@ let tray = null
  const contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
     { label: 'Item2', type: 'radio' },
-    { label: 'About', type: 'radio', checked: true },
-    { label: 'Exit', type: 'radio' }
+    { label: 'About', type: 'radio' },
+    { label: 'Exit', click() { app.quit() } }
     ])
   tray.setToolTip('Onii Hub v0.0.1')
   tray.setContextMenu(contextMenu)
+  tray.setIgnoreDoubleClickEvents(true)
 })
 
 // Quit when all windows are closed.
