@@ -1,11 +1,14 @@
 # Onii Hub
 Using Electron Quick Start
 # Usage
+```bash
 git clone https://github.com/vix-onii/onii-hub
+cd 'Onii Hub'
+npm start
+```
+
 
 ## Information of Electron Quick Start Repo-
-
-
 
 **Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
 
