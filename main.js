@@ -3,9 +3,10 @@ const {app, BrowserWindow, Menu, Tray} = require('electron')
 const path = require('path')
 const EventEmitter = require('events');
 
-function createWindow () {
+function createWindow (type) {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  if(type === 'main'){
+  global.mainWindow = new BrowserWindow({
     width: 1200,
     height: 750,
     webPreferences: {
@@ -17,6 +18,16 @@ function createWindow () {
   mainWindow.loadFile('index.html')
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+  }else if(type === 'about'){
+	const aboutWindow = new BrowserWindow({
+  width: 480,
+  height: 300,
+	modal: true,
+	parent: mainWindow
+  })
+
+  aboutWindow.loadFile('about.html')
+  }
 }
 
 // This method will be called when Electron has finished
@@ -31,7 +42,7 @@ let tray = null
 //app.on('ready', createWindow, () => {
   app.on('ready', () => {
 
-  createWindow()
+  createWindow('main')
   //tray = new Tray('/storage/img/test.png')
  //const trayDir = Tray(app.getAppPath() + '/storage/img/test.png')
  //const trayDir = Tray(app.getAppPath());
@@ -43,7 +54,7 @@ let tray = null
  const contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
     { label: 'Item2', type: 'radio' },
-    { label: 'About', type: 'radio' },
+    { label: 'About', click() { createWindow('about') } },
     { label: 'Exit', click() { app.quit() } }
     ])
   tray.setToolTip('Onii Hub v0.0.1')
