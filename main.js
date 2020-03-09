@@ -38,7 +38,7 @@ let tray = null
  //tray = new Tray('C:/Users/Colin/Desktop/Onii Application/electron-quick-start/storage/img/test.png')
  //tray = new Tray(trayDir + '/storage/img/test.png')
 
- tray = new Tray('C:/Users/Colin/Desktop/Onii Application/electron-quick-start/storage/img/test.png')
+ tray = new Tray(`${app.getAppPath()}/storage/img/test.png`)
 
  const contextMenu = Menu.buildFromTemplate([
     { label: 'Item1', type: 'radio' },
