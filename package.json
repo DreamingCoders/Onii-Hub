@@ -8,13 +8,13 @@
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
+    "Onii",
+    "Hub",
+    "Platform",
+    "Application",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "DreamingCoders + GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^8.0.3"
