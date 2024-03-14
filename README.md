@@ -3,7 +3,7 @@ Onii Hub is a program that features Onii applications, that uses a modified Elec
 This repository will not be maintained, but support for this repo will continue.
 # Usage
 ```bash
-git clone https://github.com/vix-onii/onii-hub
+git clone https://github.com/DreamingCoders/onii-hub
 cd 'Onii Hub'
 npm start
 ```
